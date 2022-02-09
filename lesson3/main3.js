@@ -104,15 +104,38 @@
 // }
 
 // - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
-for (let i = 0; i < 10; i++) {
-    console.log(`крок`, i);
-    document.write(`крок: ${i} <br>`);
-}
+// for (let i = 0; i < 10; i++) {
+//     console.log(`крок`, i);
+//     document.write(`крок: ${i} <br>`);
+// }
 
 // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+// for (let i = 1; i < 101; i++) {
+//     console.log(`крок`, i);
+//     document.write(`крок: ${i} <br>`);
+// }
+// у цьому завданні потрібно починати від let i =1 чи від 0?
+
 // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+// for (let i = 0; i < 200; i = i+2) {
+//     console.log(`крок`, i);
+//     document.write(`крок: ${i} <br>`);
+// };
+
+
 // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+// for (let i = 0; i < 200; i = i+2) {
+//     console.log(`крок`, i);
+//     document.write(`крок: ${i} <br>`);
+// };
+// в програмуванні 0 - парне число, то в цьому завданні починаємо з 0 чи 2?
+
+
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+// for (let i = 1; i < 200; i = i+2) {
+//     console.log(`крок`, i);
+//     document.write(`крок: ${i} <br>`);
+// };
 
 
 
@@ -121,9 +144,75 @@ for (let i = 0; i < 10; i++) {
 //     1. перебрати його циклом while
 //     2. перебрати його циклом for
 //     3. перебрати циклом while та вивести  числа тільки з непарним індексом
+// let arrey = [2,17,13,6,22,31,45,66,100,-18];
+// i = 0;
+// while (i<arrey.length){
+//     console.log(arrey [i]);
+//     i++
+// };
+
+// let arrey = [2,17,13,6,22,31,45,66,100,-18];
+// for (i=0; i<arrey.length; i++) {
+//     console.log(arrey[i]);
+// };
+
+// let arrey = [2,17,13,6,22,31,45,66,100,-18];
+// i = 0;
+// while (i<arrey.length){
+//     if (i%2 !==0) {
+//         console.log(arrey [i]);
+//     }
+//     i++
+// };
+
 // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
+// let arrey = [2,17,13,6,22,31,45,66,100,-18];
+// for (i=0; i<arrey.length; i++){
+//     if (i%2 !== 0) {
+//         console.log(arrey [i]);
+//     }
+// };
+
 // 5. перебрати циклом while та вивести  числа тільки парні  значення
+// let arrey = [2,17,13,6,22,31,45,66,100,-18];
+// i = 0;
+// while (i<arrey.length){
+//     if (i%2 ===0) {
+//         console.log(arrey [i]);
+//     }
+//     i++
+// };
+
 // 6. перебрати циклом for та вивести  числа тільки парні  значення
+// let arrey = [2,17,13,6,22,31,45,66,100,-18];
+// for (i=0; i<arrey.length; i++){
+//     if (i%2 === 0) {
+//         console.log(arrey [i]);
+//     }
+// };
+
 // 7. замінити кожне число кратне 3 на слово "okten"
+// let arrey = [2,17,13,6,22,31,45,66,100,-18];
+// for (let i=0; i<arrey.length; i++){
+//     if (arrey[i]%3 === 0) {
+//         arrey[i]= "okten";
+//         console.log(arrey[i]);
+//     }
+// };
+// console.log(arrey);
+
 // 8. вивести масив в зворотньому порядку.
+// let arrey = [2,17,13,6,22,31,45,66,100,-18];
+// for (let i = arrey.length-1; i>=0; i--) {
+//     console.log(arrey[i]);
+// };
+
+
 // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
+const array = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+let newArray = array.reverse();
+let i = 0;
+while (i < array.length) {
+    console.log(newArray[i]);
+    i++
+}
