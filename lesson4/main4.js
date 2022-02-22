@@ -94,13 +94,140 @@
 
 // class work
 // - створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+// function returnMinFromThree(a, b, c) {
+//     let min;
+//     if (a <= b && a <= c) min = a;
+//     if (b <= a && b <= c) min = b;
+//     if (c <= b && c <= a) min = c;
+//     console.log('min', min);
+//     return min;
+// }
+// const min = returnMinFromThree(4, 7, 2);
+// console.log(min);
+
 // - створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+// function returnMaxFromThree(a, b, c) {
+//     let max;
+//     if (a >= b && a >= c) max = a;
+//     if (b >= a && b >= c) max = b;
+//     if (c >= b && c >= a) max = c;
+//     console.log('max', max);
+//     return max;
+// }
+// const max = returnMaxFromThree(4, 7, 2);
+// console.log(max);
+
 // - створити функцію яка повертає найбільше число з масиву
+// let mainArrey = [3, 5, 2, 9, 6, 2, 7];
+// function arreyMax(arrey) {
+//     let max = arrey[0];
+//     for (const element of arrey) {
+//         if (element>max) {
+//             max = element;
+//         }
+//     }
+//     return max;
+// }
+// console.log(arreyMax(mainArrey));
+
+//або
+// const myFunck = (array) => {
+//     let max = array[0];
+//     for (const item of array) {
+//         if (max < item) max = item
+//     }
+//     return max;
+// }
+// const myFunck1 = myFunck([3, 5, 2, 9, 6, 2, 7]);
+// console.log(myFunck1);
+
 // - створити функцію яка повертає найменьше число з масиву
+// let mainArrey = [3, 5, 2, 9, 6, 2, 7];
+// function arreyMin(arrey) {
+//     let min = arrey[0];
+//     for (const element of arrey) {
+//         if (element<min) {
+//             min = element;
+//         }
+//     }
+//     return min;
+// }
+// console.log(arreyMin(mainArrey));
+
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+// function calculator(action, a, b, c) {
+//     return action(a, b, c)
+// }
+// console.log(calculator(function (a, b, c) {
+//     return a + b + c
+// },10, 20, 30))
+//або
+// console.log(calculator((a, b, c) =>
+//     a + b + c,10, 20, 30))
+// або
+// let sumArray = [1,2,3,4];
+// function sumElement (array){
+//     let sum = 0;
+//     for (const arrayElement of array) {
+//         // sum += arrayElement; // // 1 спосіб скорочений
+//         sum = arrayElement + sum;
+//     }
+//     return sum;
+// }
+// document.write(sumElement(sumArray))
+
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+// let averageArrey = [3, 4, 5];
+// function average(array) {
+//     let sum = 0;
+//     for (const arrayElement of array) {
+//         sum += arrayElement;
+//     }
+//     return sum / array.length;
+// }
+// document.write(average (averageArrey));
+
+//або
+
+// function average(array) {
+//     let sum = 0;
+//     for (const item of array) {
+//         sum += item;
+//     }
+//     return sum / array.length;
+// }
+// const average1 = average([3, 4, 5]);
+// console.log('average1', average1);
+
+
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+// function returnMinPrintMax() {
+//     let min = arguments[0];
+//     let max = arguments[0];
+//     for (const element of arguments){
+//         if (element>max)max = element;
+//         if (element<min)min = element;
+//     }
+//     console.log('max', max);
+//     return min;
+// }
+// const min = returnMinPrintMax(3, 6, 5, 9, 3, 4, 7, 8, 1);
+// console.log('min', min);z
+// document.write('Мінімальне число з введених: ' + returnMinPrintMax(100, 20, 3, 100, 2021))
+
 // - створити функцію яка заповнює масив рандомними числами
+let funRandom = (value, num) => {
+    let array = [];
+    for (let i = 0; i < value; i++){
+        array.push(Math.floor(Math.random()*num));
+    }
+return array
+};
+document.write(funRandom(12, 100));
+
+
+
+
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
