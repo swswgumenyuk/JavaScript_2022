@@ -209,13 +209,80 @@
 
 
 // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
-const array = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
-let newArray = array.reverse();
-let i = 0;
-while (i < array.length) {
-    console.log(newArray[i]);
-    i++
-}
+// const array = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+// let newArray = array.reverse();
+// let i = 0;
+// while (i < array.length) {
+//     console.log(newArray[i]);
+//     i++
+// }
+
+// let arr = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+// for (let i = arr.length - 1; i>=0; i--) {
+//     console.log(arr[i]);
+// }
+
+// 7. замінити кожне число кратне 3 на слово "okten" (у зворотньому порядку)
+// let arrey = [2,17,13,6,22,31,45,66,100,-18];
+// for (let i=arrey.length-1; i>=0; i--){
+//     if (arrey[i]%3 === 0) {
+//         arrey[i]= "okten";
+//         console.log(arrey[i]);
+//     }
+// }
+// console.log(arrey);
+
+// 6. перебрати циклом for та вивести  числа тільки парні  значення
+// let arrey = [2,17,13,6,22,31,45,66,100,-18];
+// for (i=arrey.length-1; i>=0; i--){
+//     if (i%2 === 0) {
+//         console.log(arrey [i]);
+//     }
+// };
+
+// 5. перебрати циклом while та вивести  числа тільки парні  значення
+// let arrey = [2,17,13,6,22,31,45,66,100,-18];
+// i = arrey.length -1;
+// while (i>=0){
+//     if (i%2 ===0) {
+//         console.log(arrey [i]);
+//     }
+//     i--
+// };
+
+// 4. перебрати циклом for та вивести  числа тільки з непарним індексом
+// let arrey = [2,17,13,6,22,31,45,66,100,-18];
+// for (i=arrey.length -1; i>=0; i--){
+//     if (i%2 !== 0) {
+//         console.log(arrey [i]);
+//     }
+// };
+
+// зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+//     1. перебрати його циклом while
+//     2. перебрати його циклом for
+//     3. перебрати циклом while та вивести  числа тільки з непарним індексом
+// let arrey = [2,17,13,6,22,31,45,66,100,-18];
+// i = arrey.length -1;
+// while (i>=0){
+//     console.log(arrey [i]);
+//     i--
+// };
+
+// let arrey = [2,17,13,6,22,31,45,66,100,-18];
+// for (i= arrey.length-1; i>=0; i--) {
+//     console.log(arrey[i]);
+// };
+
+// let arrey = [2,17,13,6,22,31,45,66,100,-18];
+// i = arrey.length -1;
+// while (i>=0){
+//     if (i%2 !==0) {
+//         console.log(arrey [i]);
+//     }
+//     i--
+// };
+
 
 
 
