@@ -290,8 +290,8 @@
 //
 // або
 
-let n = +prompt('n');
-let m = +prompt('m');
-let a = 2;
-let k = Math.sqrt((Math.pow(n, a) + Math.pow(m, a)));
-console.log(k);
+// let n = +prompt('n');
+// let m = +prompt('m');
+// let a = 2;
+// let k = Math.sqrt((Math.pow(n, a) + Math.pow(m, a)));
+// console.log(k);

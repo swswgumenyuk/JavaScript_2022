@@ -216,22 +216,30 @@
 // document.write('Мінімальне число з введених: ' + returnMinPrintMax(100, 20, 3, 100, 2021))
 
 // - створити функцію яка заповнює масив рандомними числами
-let funRandom = (value, num) => {
-    let array = [];
-    for (let i = 0; i < value; i++){
-        array.push(Math.floor(Math.random()*num));
-    }
-return array
-};
-document.write(funRandom(12, 100));
+// let funRandom = (value, num) => {
+//     let array = [];
+//     for (let i = 0; i < value; i++){
+//         array.push(Math.floor(Math.random()*num));
+//     }
+// return array
+// };
+// document.write(funRandom(12, 100));
 
 
 
 
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+
+
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
-
-
-
+// function reverse(array) {
+//     let arr = [1,2,3];
+//     for (let i = arr.length - 1, ri = 0; i >= 0; i--, ri++) {
+//         newArr[ri] = newArr[i];
+//     }
+//
+//     return newArr;
+// }
+//це завд не розумію
 
