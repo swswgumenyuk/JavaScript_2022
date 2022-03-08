@@ -233,13 +233,32 @@
 
 
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
-// function reverse(array) {
-//     let arr = [1,2,3];
+// function reverse(arr) {
+//     let newArr = [];
 //     for (let i = arr.length - 1, ri = 0; i >= 0; i--, ri++) {
-//         newArr[ri] = newArr[i];
+//         newArr[ri] = arr[i];
 //     }
 //
 //     return newArr;
 // }
-//це завд не розумію
+// console.log(reverse([10,20,30]));
+
+// let arr = [10,20,30];
+// let ri = arr.length-1;
+// let arrReverse = [];
+// for (let element of arr) {
+//     console.log(ri);
+//     arrReverse[ri] = element;
+//     ri--;
+// }
+// console.log(arrReverse);
+
+// let arr = [10,20,30,40];
+// for (let i=0; ri=arr.length-1;
+// i<arr.length;
+// i++; ri--) {
+//     console.log(ri)
+// }
+
+
 
